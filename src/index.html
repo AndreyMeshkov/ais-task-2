@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Skype UI</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="user">
+			<div class="user-header">
+				<div class="user-main">
+					<img src="img/user1.jpg" alt="My photo" />
+					<div class="user-state"></div>
+					<span class="user-name">Ivan Ivanov</span>
+					<span class="user-score">$0.00</span>
+					<div class="user-more">
+						<span class="material-icons" data-tooltip="More">more_horiz</span>
+					</div>
+				</div>
+				<div class="user-search">
+					<div class="user-search-wrapper">
+						<div class="user-search-icon">
+							<span class="material-icons">search</span>
+						</div>
+						<form class="user-search-form" data-tooltip="People, groups & messages">
+							<input class="user-search-field" type="text"
+								placeholder="        People, groups & messages">
+						</form>
+						<div class="user-dialpad">
+							<span class="material-icons" data-tooltip="Use dial pad">dialpad</span>
+						</div>
+					</div>
+				</div>
+				<div class="user-action">
+					<ul>
+						<li data-tooltip="Chats">
+							<div class="user-action-icon">
+								<span class="material-icons">chat</span>
+							</div>
+							<span>Chats</span>
+						</li>
+						<li data-tooltip="Calls">
+							<div class="user-action-icon">
+								<span class="material-icons">phone</span>
+							</div>
+							<span>Calls</span>
+						</li>
+						<li data-tooltip="Contacts">
+							<div class="user-action-icon">
+								<span class="material-icons">account_box</span>
+							</div>
+							<span>Contacts</span>
+						</li>
+						<li data-tooltip="Notifications">
+							<div class="user-action-icon">
+								<span class="material-icons">notifications</span>
+							</div>
+							<span>Notifications</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="user-list">
+				<div class="user-list-action">
+					<ul>
+						<li data-tooltip="Meet Now">
+							<div class="user-list-meet">
+								<span class="material-icons">videocam</span>
+							</div>
+							<span>Meet Now</span>
+						</li>
+						<li data-tooltip="New Chat">
+							<div class="user-list-chat">
+								<span class="material-icons">event_note</span>
+							</div>
+							<span>New Chat</span>
+						</li>
+					</ul>
+				</div>
+				<div class="user-list-recent">
+					<span>RECENT CHATS</span>
+				</div>
+				<div class="user-list-wrapper">
+					<div class="user-list-card first">
+						<img src="img/user2.jpg" alt="Petr Petrov photo" />
+						<div class="user-state"></div>
+						<div class="user-list-info">
+							<span class="user-list-name">Petr Petrov</span>
+							<span class="user-list-time">10.07.2020</span>
+							<span class="user-list-msg">Lorem ipsum dolor sit.</span>
+						</div>
+					</div>
+					<div class="user-list-card">
+						<img src="img/user3.jpg" alt="Petr Petrov photo" />
+						<div class="user-state"></div>
+						<div class="user-list-info">
+							<span class="user-list-name">Petr Petrov</span>
+							<span class="user-list-time">10.07.2020</span>
+							<span class="user-list-msg">Lorem ipsum dolor sit.</span>
+						</div>
+					</div>
+					<div class="user-list-card">
+						<img src="img/user4.jpg" alt="Petr Petrov photo" />
+						<div class="user-state"></div>
+						<div class="user-list-info">
+							<span class="user-list-name">Petr Petrov</span>
+							<span class="user-list-time">10.07.2020</span>
+							<span class="user-list-msg">Lorem ipsum dolor sit.</span>
+						</div>
+					</div>
+					<div class="user-list-card">
+						<img src="img/user5.jpg" alt="Petr Petrov photo" />
+						<div class="user-state"></div>
+						<div class="user-list-info">
+							<span class="user-list-name">Petr Petrov</span>
+							<span class="user-list-time">10.07.2020</span>
+							<span class="user-list-msg">Lorem ipsum dolor sit.</span>
+						</div>
+					</div>
+					<div class="user-list-card">
+						<img src="img/user6.jpg" alt="Petr Petrov photo" />
+						<div class="user-state"></div>
+						<div class="user-list-info">
+							<span class="user-list-name">Petr Petrov</span>
+							<span class="user-list-time">10.07.2020</span>
+							<span class="user-list-msg">Lorem ipsum dolor sit.</span>
+						</div>
+					</div>
+					<div class="user-list-card">
+						<img src="img/user7.jpg" alt="Petr Petrov photo" />
+						<div class="user-state"></div>
+						<div class="user-list-info">
+							<span class="user-list-name">Petr Petrov</span>
+							<span class="user-list-time">10.07.2020</span>
+							<span class="user-list-msg">Lorem ipsum dolor sit.</span>
+						</div>
+					</div>
+					<div class="user-list-card">
+						<img src="img/user8.jpg" alt="Petr Petrov photo" />
+						<div class="user-state"></div>
+						<div class="user-list-info">
+							<span class="user-list-name">Petr Petrov</span>
+							<span class="user-list-time">10.07.2020</span>
+							<span class="user-list-msg">Lorem ipsum dolor sit.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="chat">
+			<div class="chat-header">
+				<div class="chat-header-info">
+					<div class="chat-name">
+						<span data-tooltip="Petr Petrov">Petr Petrov</span>
+					</div>
+					<ul>
+						<li class="chat-state" data-tooltip="Active now">
+							<div class="chat-user-state"></div>
+							<span>Active now</span>
+						</li>
+						<li class="chat-gallery" data-tooltip="Gallery">
+							<div class="material-icons">photo_library</div>
+							<span>Gallery</span>
+						</li>
+						<li class="chat-find" data-tooltip="Find">
+							<div class="material-icons">search</div>
+							<span>Find</span>
+						</li>
+					</ul>
+				</div>
+				<div class="chat-header-action">
+					<ul>
+						<li class="chat-camera" data-tooltip="Video Call">
+							<div class="material-icons">videocam</div>
+						</li>
+						<li class="chat-call" data-tooltip="Audio Call">
+							<div class="material-icons">call</div>
+						</li>
+						<li class="chat-group" data-tooltip="Create new group">
+							<div class="material-icons">person_add_alt_1</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="chat-field">
+				<div class="main-msg">
+					<div class="main-msg-time">15:36</div>
+					<div class="main-msg-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, qui?
+					</div>
+				</div>
+				<div class="another-msg">
+					<img class="another-msg-user" src="img/user2.jpg" alt="photo Petr Petrov">
+					<div class="another-msg-info">
+						<div class="another-msg-info">Petr Petrov, 15:40</div>
+						<div class="another-msg-text">Lorem, ipsum dolor.</div>
+					</div>
+				</div>
+				<div class="main-msg">
+					<div class="main-msg-time">15:36</div>
+					<div class="main-msg-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, qui?
+					</div>
+				</div>
+				<div class="another-msg">
+					<img class="another-msg-user" src="img/user2.jpg" alt="photo Petr Petrov">
+					<div class="another-msg-info">
+						<div class="another-msg-info">Petr Petrov, 15:40</div>
+						<div class="another-msg-text">Lorem, ipsum dolor.</div>
+					</div>
+				</div>
+				<div class="main-msg">
+					<div class="main-msg-time">15:36</div>
+					<div class="main-msg-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, qui?
+					</div>
+				</div>
+				<div class="chat-footer">
+
+				</div>
+			</div>
+			<div class="chat-footer">
+				<form class="chat-input">
+					<span class="material-icons">sentiment_satisfied_alt</span>
+					<input name="text" placeholder="         Type a message"></input>
+				</form>
+				<div class="chat-footer-icons">
+					<ul>
+						<li class="add-icon" data-tooltip="Add files">
+							<span class="material-icons">description</span>
+						</li>
+						<li class="send-icon" data-tooltip="Send contacts to this chat">
+							<span class="material-icons">perm_media</span>
+						</li>
+						<li class="record-icon" data-tooltip="Record a message">
+							<span class="material-icons">keyboard_voice</span>
+						</li>
+						<li class="more-icon">
+							<span class="material-icons">more_horiz</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>
