@@ -5,6 +5,7 @@
 	font-family: sans-serif;
 	font-size: 12px;
 	list-style-type: none;
+	color: #444444;
 }
 .container {
 	display: flex;
@@ -18,14 +19,14 @@
 	flex-direction: column;
 	width: 320px;
 	height: 100vh;
-	border-right: 1px solid rgb(0, 0, 0);
-	background-color: rgb(220, 220, 220);
+	border-right: 1px solid #D7D8DC;
+	background-color: #F0F3F8;
 }
 
 .user-header {
 	display: flex;
 	flex-direction: column;
-	border-bottom: 1px solid rgb(0, 0, 0);
+	border-bottom: 1px solid #D7D8DC;
 }
 
 .user-main {
@@ -35,14 +36,14 @@
 }
 
 .user-state {
-	display: flex;
 	position: absolute;
-	background-color: rgb(90, 255, 70);
-	width: 10px;
-	height: 10px;
+	background-color: #4AD96D;
+	width: 13px;
+	height: 13px;
 	border-radius: 50%;
 	margin-top: 28px;
 	margin-left: 28px;
+	border: 2px solid #ffffff;
 }
 
 img {
@@ -78,14 +79,12 @@ img {
 .user-dialpad :hover,
 .user-action ul :hover,
 .user-list-recent :hover,
-.chat-header-info ul :hover,
-.chat-name :hover,
-.chat-header-action ul :hover {
-	color: rgb(105, 105, 105);
+.chat-header-info :hover {
+	color: #869099;
 }
 
 .user-list-wrapper :hover {
-	background-color: rgb(116, 233, 196);
+	background-color: #DDF1FA;
 	cursor: pointer;
 }
 [data-tooltip] {
@@ -95,20 +94,16 @@ img {
 [data-tooltip]:hover::after {
 	content: attr(data-tooltip);
 	position: absolute;
-	left: 0;
-	top: 0;
+	top: 4em;
 	z-index: 1;
-	background: rgba(255, 255, 255, 0.9);
+	background: #ffffff;
 	font-family: Arial, sans-serif;
+	text-align: center;
 	font-size: 11px;
 	padding: 5px 10px;
 	border: 1px solid #333;
-	color: rgb(0, 0, 0);
-}
-
-[data-tooltip]:hover::after {
-	opacity: 1;
-	top: 2em;
+	color: #444444;
+	width: max-content;
 }
 
 .user-search {
@@ -127,8 +122,8 @@ img {
 	width: 280px;
 	height: 30px;
 	border-radius: 5px 0 0 5px;
-	border: 2px solid rgb(0, 0, 0);
-	border-right: 1px solid rgb(0, 0, 0);
+	border: 2px solid #869099;
+	border-right: 1px solid #869099;
 }
 
 .user-search-icon .material-icons {
@@ -136,16 +131,16 @@ img {
 	margin-left: 5px;
 	margin-top: -10px;
 	z-index: 1;
-	color: rgb(105, 105, 105);
+	color: #869099;
 }
 
 .user-dialpad {
 	display: flex;
-	background-color: rgb(255, 255, 255);
+	background-color: #ffffff;
 	width: 22px;
 	height: 30px;
-	border: 2px solid rgb(0, 0, 0);
-	border-left: 1px solid rgb(0, 0, 0);
+	border: 2px solid#869099;
+	border-left: 1px solid #869099;
 	border-radius: 0 10% 10% 0;
 }
 
@@ -189,7 +184,7 @@ img {
 	height: 40px;
 	margin: 10px;
 	align-items: center;
-	background-color: rgba(255, 255, 255);
+	background-color: #ffffff;
 	border-radius: 40px;
 	justify-content: center;
 }
@@ -208,6 +203,7 @@ img {
 	display: flex;
 	flex-direction: row;
 	height: 60px;
+	padding: 5px;
 }
 
 .user-list-info {
@@ -234,11 +230,11 @@ img {
 }
 .user-list-msg,
 .user-list-time {
-	color: rgb(105, 105, 105);
+	color: #81919E;
 }
 
 .first {
-	background-color: rgb(19, 145, 223);
+	background-color: #C7ECFC;
 }
 
 .chat {
@@ -250,6 +246,7 @@ img {
 
 .chat-header {
 	display: flex;
+	flex: 0 0 auto;
 	flex-direction: row;
 	width: 100%;
 }
@@ -262,7 +259,7 @@ img {
 .chat-header-info ul {
 	display: flex;
 	flex-direction: row;
-	background-color: white;
+	background-color: #FDFEFF;
 	margin: 0 20px;
 	align-items: center;
 }
@@ -276,7 +273,7 @@ img {
 .chat-gallery,
 .chat-find {
 	display: flex;
-	border-left: 1px solid #000;
+	border-left: 1px solid #444444;
 	align-items: center;
 	margin: 10px;
 }
@@ -291,11 +288,11 @@ img {
 }
 
 .chat-user-state {
-	display: flex;
 	position: absolute;
-	background-color: rgb(90, 255, 70);
-	width: 10px;
-	height: 10px;
+	border: 2px solid #ffffff;
+	background-color: #4AD96D;
+	width: 13px;
+	height: 13px;
 	border-radius: 50%;
 	margin-top: 1px;
 	margin-left: -15px;
@@ -307,7 +304,7 @@ img {
 }
 
 .chat-header-action ul li {
-	background-color: rgb(209, 203, 203);
+	background-color: #F0EFF4;
 	width: 40px;
 	height: 40px;
 	margin: 30px 5px;
@@ -325,7 +322,13 @@ img {
 
 .chat-header {
 	height: 110px;
-	border-bottom: 2px solid rgb(0, 0, 0);
+	border-bottom: 2px solid #869099;
+}
+
+.chat-field {
+	display: flex;
+	flex: 1 0 auto;
+	flex-direction: column;
 }
 
 .main-msg {
@@ -346,7 +349,7 @@ img {
 	margin-left: auto;
 	margin-right: 10px;
 	margin-top: 10px;
-	background-color: rgb(105, 159, 193);
+	background-color: #DCF4FE;
 	padding: 10px;
 	border-radius: 5px 0 5px 5px;
 }
@@ -375,58 +378,58 @@ img {
 	flex-direction: column;
 	margin-left: 10px;
 	margin-top: 5px;
-	background-color: rgb(209, 203, 203);
+	background-color: #F2F6F9;
 	padding: 10px;
 	border-radius: 0 5px 5px 5px;
 }
 
 .chat-footer {
 	display: flex;
+	flex: 0 0 auto;
 	flex-direction: row;
-	margin-bottom: 5px;
 	justify-content: center;
-	align-items: end;
-	margin-top: 50px;
+	align-items: center;
+	height: 80px;
+	margin-bottom: 10px ;
 }
 
 .chat-input input {
-	display: flex;
-	width: 650px;
-	height: 60px;
-	border-radius: 20px;
+	width: 550px;
+	height: 50px;
+	border-radius: 0 20px 20px 0;
+	background-color: #F1F0F5;
+	border: #444444;
+	outline: none;
 }
 
-.chat-input span {
+.chat-emogi {
 	display: flex;
-	position: absolute;
-	margin-top: 18px;
-	margin-left: 5px;
-}
-
-.chat-footer-icons {
-	display: flex;
-	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 20px 0 0 20px;
+	background-color: #F1F0F5;
 }
 
 .chat-footer-icons ul {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	margin-top: 10px;
 }
 
 .chat-footer-icons ul li {
 	display: flex;
 	margin-left: 10px;
-	background-color: rgb(209, 203, 203);
+	background-color: #EDECF2;
 	width: 40px;
 	height: 40px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
 	cursor: pointer;
-}
+} 
 
-.chat-footer-icons ul :hover {
-	background-color: rgb(105, 105, 105);
+.chat-footer-icons ul :hover,
+.chat-header-action ul :hover {
+	background-color: #e0e4e4;
 }
